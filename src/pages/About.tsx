@@ -21,7 +21,7 @@ export default function About() {
           <Box
             component="img"
             alt="Founder portrait"
-            src="https://scontent.fmaa6-1.fna.fbcdn.net/v/t39.30808-6/505150458_24186364157623150_361677218645948718_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=GfW1AwaMZvwQ7kNvwEd4ksz&_nc_oc=AdkIMziJzj0NvfVsE6UHg0C0GiY-NuOPELic8MAb-AnpHPyzVy5ByiRCCe2eU4Kz_hE&_nc_zt=23&_nc_ht=scontent.fmaa6-1.fna&_nc_gid=YTNSa_ZDKBznJChDwqk_Rw&oh=00_AfWkP80mUeEQjmb-2PE_TA2ep6CjTMKmuOnAhMYQ4w4nGA&oe=68B11AD5"
+            src="https://scontent.fmaa2-1.fna.fbcdn.net/v/t39.30808-6/707796684_27487480420844824_5899705833002311894_n.jpg?stp=dst-jpg_tt6&cstp=mx853x853&ctp=s853x853&_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=nb5iRH7MXcEQ7kNvwFZW0om&_nc_oc=Adr6lO5MvVgodx0jRsRbgY8OyYfbycSHfHU2FBsf0-tH_gcS62jU3_OxAAPhH1awKsc&_nc_zt=23&_nc_ht=scontent.fmaa2-1.fna&_nc_gid=BuLMT_jqK9lzUCEWxIdOew&_nc_ss=7b2a8&oh=00_AQLMRuEoT8revRdPx2CLMZ7i3QIC71naSRx4QUu8VC7OTg&oe=6AB1BCD8"
             sx={{ width: "100%", borderRadius: 2, border: "1px solid #1a1a1a" }}
           />
         </Grid>
