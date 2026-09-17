@@ -1,34 +1,13 @@
 version: 1
-
-backend:
-  phases:
-    preBuild:
-      commands:
-        # Force Node.js 20
-        - nvm install 22
-        - nvm use 22
-        - node --version
-        - npm --version
-
-        # Install dependencies
-        - npm install --cache .npm --prefer-offline
-
-    build:
-      commands:
-        - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
-
 frontend:
   phases:
     preBuild:
       commands:
-        # Force Node.js 20
         - nvm install 22
         - nvm use 22
-        - node --version
-        - npm --version
-
-        # Install dependencies
-        - npm install --cache .npm --prefer-offline
+        - node -v
+        - npm -v
+        - npm ci --cache .npm --prefer-offline
 
     build:
       commands:
@@ -37,7 +16,7 @@ frontend:
   artifacts:
     baseDirectory: dist
     files:
-      - '**/*'
+      - "**/*"
 
   cache:
     paths:
