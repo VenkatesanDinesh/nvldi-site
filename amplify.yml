@@ -5,8 +5,8 @@ backend:
     preBuild:
       commands:
         # Force Node.js 20
-        - nvm install 20
-        - nvm use 20
+        - nvm install 22
+        - nvm use 22
         - node --version
         - npm --version
 
@@ -22,8 +22,8 @@ frontend:
     preBuild:
       commands:
         # Force Node.js 20
-        - nvm install 20
-        - nvm use 20
+        - nvm install 22
+        - nvm use 22
         - node --version
         - npm --version
 
