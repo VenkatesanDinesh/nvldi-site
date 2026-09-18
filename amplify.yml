@@ -7,7 +7,9 @@ frontend:
         - nvm use 22
         - node -v
         - npm -v
-        - npm install --cache .npm --prefer-offline
+        - rm -rf node_modules
+        - rm -rf .npm
+        - npm install
 
     build:
       commands:
@@ -18,7 +20,3 @@ frontend:
     baseDirectory: dist
     files:
       - "**/*"
-
-  cache:
-    paths:
-      - .npm/**/*
