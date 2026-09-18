@@ -7,10 +7,12 @@ frontend:
         - nvm use 22
         - node -v
         - npm -v
-        - npm install --cache .npm --prefer-offline
+        - rm -rf node_modules
+        - npm ci --cache .npm --prefer-offline
 
     build:
       commands:
+        - chmod +x node_modules/.bin/vite
         - npm run build
 
   artifacts:
